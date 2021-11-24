@@ -1,5 +1,5 @@
 -- Task1 
-select distinct maker from product
+select distinct maker, type from product
 where type = 'laptop'
 order by maker;
 

@@ -52,9 +52,7 @@ CREATE TABLE IF NOT EXISTS `db_lab_7`.`family_tree` (
   `place_of_death` VARCHAR(45) NULL,
   `sex` VARCHAR(45) NOT NULL,
   `place_of_birth` VARCHAR(45) NULL,
-  `family_companion_id` INT NULL,
   `family_tree_id` INT NULL,
-  `family_has_jewelry_id` INT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -88,9 +86,7 @@ CREATE TABLE IF NOT EXISTS `db_lab_7`.`family_jewelry` (
   `expected_value` INT NOT NULL,
   `max_value` INT NOT NULL,
   `min_value` INT NOT NULL,
-  `code` INT NOT NULL,
-  `family_has_jewelry_id` INT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `code_UNIQUE` (`code` ASC) VISIBLE)
+  `code` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 

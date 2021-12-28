@@ -1,0 +1,1 @@
+select * from family_jewelry where family_jewelry.max_value < avg_max_value();
